@@ -4,6 +4,7 @@ package _04_secret_message_box;
 
 
 import javax.swing.JOptionPane;
+import javax.swing.JPopupMenu;
 
 /**
  * Secret Message Box / Secure Messaging System
@@ -17,16 +18,42 @@ import javax.swing.JOptionPane;
 public class SecretMessageBox {
 
 	// 0. Make a main method and put steps 1-5 inside it
+	public static void main(String[] args) {
+		
 	
 	// 1. Set a password in a String variable
-	
+	String pass = "1234";
 	// 2. Using a pop-up, ask the first person for a secret message and store it in a variable
-
+	String input = JOptionPane.showInputDialog(null, "tell me the secret message");
 	// 3. Now use a pop-up to tell the NEXT user that they can only see the secret message 
 	//    if they can guess the passcode
-
+	String guess =  JOptionPane.showInputDialog(null, "Password requred to hear the message");
 	// 4. If their guess matches the password, show them the secret message
+if (guess.equals( pass       )){
+	JOptionPane.showMessageDialog(null,input );
 
+	
+} else { JOptionPane.showMessageDialog(null, "INTRUDER!!");
 	// 5. If the password does not match, pop-up "INTRUDER!!"
 
+
+	
+}	
+	
+	
+	}
+	
+	
+	
+	
+	
 }
+
+
+
+
+
+
+
+
+
