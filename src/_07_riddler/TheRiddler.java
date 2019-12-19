@@ -17,7 +17,9 @@ public class TheRiddler {
 String riddle = JOptionPane.showInputDialog(null," The more you take, the more you leave behind. What am I?"  );
 		// 4. If they got the answer right, pop up "correct!" and increase the score by one
 if (riddle.equalsIgnoreCase("footsteps")) {
-	JOptionPane.showMessageDialog(null," Correct. Uno point   " );
+	JOptionPane.showMessageDialog(null," Correct. 1 point   " );
+	score ++;
+
 }
 		// 5. Otherwise, say "wrong" and tell them the answer
 else {
@@ -25,10 +27,31 @@ else {
 	
 }
 	// 6. Add some more riddles
-
-
-		// 2. Make a pop up to show the score.
+ String shave = JOptionPane.showInputDialog(null, " I shave every day, but my beard stays the same. What am I");
+if (shave.equalsIgnoreCase("a barber")) {
+	JOptionPane.showMessageDialog(null," Correct. 1 point   " );
+	score ++;
 		
+	
+}	
+else {
+	JOptionPane.showMessageDialog(null, " Wrong.");
+	
+}
+ 	
+
+
+// 2. Make a pop up to show the score.
+		
+	JOptionPane.showMessageDialog(null, " your score is "  + score );
+	
+	
+	
+	
+	
 	}
+
+
+
 }
 
