@@ -45,7 +45,31 @@ rob.microMove(1);
 }
 		// 5. If the left arrow is pressed, make the Robot go left.
 
+if ( keyPressed == 37      ) {
+rob.setAngle(-90);
+rob.microMove(1);
+	
+	
+	
+	
+}
 		// 6. If right is pressed, move the Robot right.
+
+
+if ( keyPressed == 39       ) {
+rob.setAngle( 90);
+rob.microMove(1);
+
+
+
+
+
+
+}
+
+
+
+
 
 		// 7. Run your program and move the Robot to RD-2D for a surprise!
 	}
@@ -66,7 +90,7 @@ rob.microMove(1);
 		KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(this);
 		Robot.setWindowImage("planet.jpg");
 		rob.penUp();
-		rob.setSpeed(10);
+
 	}
 
 	public boolean dispatchKeyEvent(KeyEvent e) {
