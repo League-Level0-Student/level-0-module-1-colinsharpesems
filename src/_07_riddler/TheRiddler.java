@@ -11,6 +11,10 @@ public class TheRiddler {
 
 	public static void main(String[] args) {
 
+for (int j = 1; j < 11; j++) {
+System.out.println(j);	
+}
+
 		// 1. Make a variable to hold the score
 		int score = 0;
 		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
